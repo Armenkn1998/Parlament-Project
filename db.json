@@ -1,0 +1,34 @@
+{
+    "Parlament":[
+        {
+            "id":1,
+            "title":"DocCirculation",
+            "description":"Քաղաքացիների ընդունելության և փաստաթղթաշրջանառության կարգը"
+        },
+        {
+            "id":2,
+            "title":"TimeTable",
+            "description":"Քաղաքացիների ընդունելության ժամանակացույց"
+        },
+        {
+            "id":3,
+            "title":"Committees",
+            "description":"Մշտական հանձնաժողովները և նրանց գործունեության ոլորտները"
+        },
+        {
+            "id":4,
+            "title":"MeetingsSchedule",
+            "description":"ԱԺ նիստերի ժամանակացույց"
+        },
+        {
+            "id":5,
+            "title":"MPNumbers",
+            "description":"Պատգամավորների աշխատանքային հեռախոսահամարները"
+        },
+        {
+            "id":6,
+            "title":"DepNumbers",
+            "description":"Կառուցվածքային ստորաբաժանումների հեռախոսահամարներ"
+        }
+]
+}
