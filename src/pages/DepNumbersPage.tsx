@@ -1,7 +1,10 @@
 import React from 'react'
+import { Header } from '../components/Header'
 
 export const DepNumbersPage = () => {
   return (
-    <div>DepNumbersPage</div>
+    <div>
+      <Header/>
+      DepNumbersPage</div>
   )
 }

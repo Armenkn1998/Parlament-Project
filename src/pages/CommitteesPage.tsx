@@ -1,7 +1,11 @@
 import React from 'react'
-
+import { Header} from '../components/Header'
 export const CommitteesPage = () => {
   return (
-    <div>CommitteesPage</div>
+    
+    <div>
+      <Header/>
+      CommitteesPage
+    </div>
   )
 }

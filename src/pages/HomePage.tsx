@@ -1,18 +1,20 @@
 import {useState,useEffect} from 'react';
-import { IParlament } from '../models/model';
+import { fetching,fetchSuccess,fetchError } from '../store/slice/parlamentSlice';
 import {useNavigate} from 'react-router-dom'
-
+import { useAppSelector, useAppDispatch } from '../hooks/redux'
+import { fetchParlament } from "../store/action/parlamentActions";
 export const HomePage = () => {
 
-  const [parlament,setParlament]=useState<IParlament[]>([]);
+ 
   const navigate=useNavigate();
-
+  const {parlament} = useAppSelector(state => state.parlament)
+  const dispatch = useAppDispatch()
+  
   useEffect(()=>{
-    fetch('http://localhost:3000/Parlament')
-    .then(response=>response.json())
-    .then(data=>setParlament(data)
-    )
+    dispatch(fetchParlament())
   },[])
+  
+console.log(parlament);
 
   return (
 
@@ -22,6 +24,7 @@ export const HomePage = () => {
       <h2>Բարի Գալուստ</h2>
       <h2>Հայաստանի Հանրապետության ազգային ժողով</h2>
       </header>
+      <h1>Հարգելի քաղաքացի ընտրեք ձեզ հետաքրքրող բաժինը ինֆորմացիա ստանալու համար</h1>
      {
       parlament?.map(item=><div key={item.id} onClick={()=>navigate('/'+item.title)}>
         <h2>{item.description}</h2></div>

@@ -1,7 +1,10 @@
 import React from 'react'
+import { Header } from '../components/Header'
 
 export const MPNumbersPage = () => {
   return (
-    <div>MPNumbersPage</div>
+    <div>
+      <Header/>
+      MPNumbersPage</div>
   )
 }

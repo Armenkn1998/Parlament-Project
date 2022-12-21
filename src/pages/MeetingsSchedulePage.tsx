@@ -1,7 +1,10 @@
 import React from 'react'
+import { Header } from '../components/Header'
 
 export const MeetingsSchedulePage = () => {
   return (
-    <div>MeetingsSchedulePage</div>
+    <div>
+      <Header/>
+      MeetingsSchedulePage</div>
   )
 }
