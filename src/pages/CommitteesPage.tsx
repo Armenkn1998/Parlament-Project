@@ -5,7 +5,7 @@ export const CommitteesPage = () => {
     
     <div>
       <Header/>
-      CommitteesPage
+      CommitteesPage6yuuug
     </div>
   )
 }
