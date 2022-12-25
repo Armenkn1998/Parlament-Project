@@ -30,5 +30,212 @@
             "title":"DepNumbers",
             "description":"Կառուցվածքային ստորաբաժանումների հեռախոսահամարներ"
         }
+],
+"MPs":[
+    {
+        "id":1,
+        "name": "Ալեն",
+        "lastname": "Սիմոնյան",
+        "firstname": "Ռոբերտի",
+        "phonenumber": "14-55",
+        "key":"boss"
+    },
+    {
+        "id":2,
+        "name": "Հակոբ",
+        "lastname": "Արշակյան",
+        "firstname": "Աշոտի",
+        "phonenumber": "14-78",
+        "key":"noboss"
+
+    },   {
+        "id":3,
+        "name": "Ռուբեն",
+        "lastname": "Ռուբինյան",
+        "firstname": "Վալոդի",
+        "phonenumber": "14-45",
+        "key":"boss"
+
+    },   {
+        "id":4,
+        "name": "Տիգրան",
+        "lastname": "Աբրահամյան",
+        "firstname": "Հրանտի",
+        "phonenumber": "14-34",
+        "key":"noboss"
+
+    },   {
+        "id":5,
+        "name": "Աշոտիկ",
+        "lastname": "Սիմոնյան",
+        "firstname": "Հրանտի",
+        "phonenumber": "14-63",
+        "key":"noboss"
+
+    },   {
+        "id":6,
+        "name": "Վահագն",
+        "lastname": "Ալեքսանյան",
+        "firstname": "Հովիկի",
+        "phonenumber": "14-88",
+        "key":"noboss"
+
+    },   {
+        "id":7,
+        "name": "Էդուարդ",
+        "lastname": "Աղաջանյան",
+        "firstname": "Արթուրի",
+        "phonenumber": "14-35",
+        "key":"boss"
+
+    },   {
+        "id":8,
+        "name": "Գևորգ",
+        "lastname": "Բալդրյան",
+        "firstname": "Վահեի",
+        "phonenumber": "15-75",
+        "key":"noboss"
+
+    },   {
+        "id":9,
+        "name": "Գոռ",
+        "lastname": "Սանոսյան",
+        "firstname": "Վաչեի",
+        "phonenumber": "18-88",
+        "key":"noboss"
+
+    },{
+        "id":10,
+        "name": "Տիգրան",
+        "lastname": "Արզաքանչյան",
+        "firstname": "Սերգեի",
+        "phonenumber": "13-88",
+        "key":"noboss"
+
+    }
+],
+"committee":[
+    {
+        "id":1,
+        "name":"Աշխատանքի և սոցիալական հարցերի",
+        "member1":"Տիգրանյան Հերիքնազ",
+        "member2":"Ավետիսյան Թադևոս",
+        "cityphone":" ",
+        "internalphone":"13-88",
+        "internalphone2":" "
+    },    {
+        "id":2,
+        "name":"Առողջապահության հարցերի",
+        "member1":"Զեյնալյան Նարեկ",
+        "member2":"Բադալյան Լուսինե",
+        "cityphone":"52-54-30",
+        "internalphone":"13-80",
+        "internalphone2":" "
+
+    },    {
+        "id":3,
+        "name":"Գիտության, կրթության, մշակույթի, սփյուռքի, երիտասարդության և սպորտի հարցերի",
+        "member1":"Գաբրիելյան Սիսակ",
+        "member2":"Ղազարյան Թագուհի",
+        "cityphonr":" ",
+        "internalphone":"13-88",
+        "internalphone2":" "
+
+    },    {
+        "id":4,
+        "name":"Եվրոպական ինտեգրման հարցերի",
+        "member1":"Եղոյան Արման ",
+        "member2":"Գալստյան Մերի ",
+        "cityphone":" ",
+        "internalphone":"13-88",
+        "internalphone2":" "
+
+    },    {
+        "id":5,
+        "name":"Մարդու իրավունքների պաշտպանության և հանրային հարցերի",
+        "member1":"Թովմասյան Թագուհի",
+        "member2":"Բաքոյան Ռուստամ",
+        "cityphone":"52-67-01",
+        "internalphone":"19-88 ",
+        "internalphone2":"16-44 "
+
+    },    {
+        "id":6,
+        "name":"Պետական-իրավական հարցերի",
+        "member1":"Վարդանյան Վլադիմիր",
+        "member2":"Արուսյակ Ջուլհակյան",
+        "cityphonr":"52-78-20",
+        "internalphone":"15-97 ",
+        "internalphone2":"13-85 "
+
+    },    {
+        "id":7,
+        "name":"Տարածաշրջանային և եվրասիական ինտեգրման հարցերի",
+        "member1":" ",
+        "member2":"Հակոբյան Վաղարշակ",
+        "cityphone":"58-80-02",
+        "internalphone":"13-88",
+        "internalphone2":" "
+
+    },    {
+        "id":8,
+        "name":"Տարածքային կառավարման, տեղական ինքնակառավարման, գյուղատնտեսության և շրջակա միջավայրի պահպանության հարցերի մշտական հանձնաժողով",
+        "member1":"Ղալումյան Վահե",
+        "member2":"Մկրտչյան Արեն",
+        "cityphone":"58-77-60 ",
+        "internalphone":"13-98",
+        "internalphone2":" "
+
+    },    {
+        "id":9,
+        "name":"Տնտեսական հարցերի",
+        "member1":" ",
+        "member2":"Թունյան Բաբկեն",
+        "cityphone":" ",
+        "internalphone":"13-88",
+        "internalphone2":" "
+
+    },    {
+        "id":10,
+        "name":"Ֆինանասավարկային և բյուջետային հարցերի",
+        "member1":"Պապոյան Գևորգ",
+        "member2":"Խաչատրյան Արթուր",
+        "cityphone":"54-48-82",
+        "internalphone":"13-78 ",
+        "internalphone2":"13-65 "
+
+    }
+
+],
+"fraction":[
+    {
+        "id":1,
+        "name":"Ուժ Հայրենաց>",
+        "leader":"Տիգրան Արզաքանչյան",
+        "member":"Նատալյա Ռոտենբեռգ",
+        "cityphone":"",
+        "internalphone":"13-33"
+    },   {
+        "id":2,
+        "name":"Քաղաքացիական Պայմանագիր",
+        "leader":"Նիկոլ Փաշինյան",
+        "member":"Հայկ Կոնջորյան",
+        "cityphone":"",
+        "internalphone":"13-70"
+    },   {
+        "id":3,
+        "name":"Հայաստան Դաշինք",
+        "leader":"Ռոբերտ Քոչարյան",
+        "member":"Սեյրան Օհանյան",
+        "cityphone":"",
+        "internalphone":"13-88"
+    },   {
+        "id":4,
+        "name":"Պատիվ ՈՒնեմ",
+        "leader":"Սերժիկ Սարգսյան",
+        "member":"Արթուր Վանեցյան",
+        "cityphone":"",
+        "internalphone":"14-65"
+    }
 ]
 }

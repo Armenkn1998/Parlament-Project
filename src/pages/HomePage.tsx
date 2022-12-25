@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react';
-import { fetching,fetchSuccess,fetchError } from '../store/slice/parlamentSlice';
+
 import {useNavigate} from 'react-router-dom'
 import { useAppSelector, useAppDispatch } from '../hooks/redux'
 import { fetchParlament } from "../store/action/parlamentActions";
@@ -14,7 +14,7 @@ export const HomePage = () => {
     dispatch(fetchParlament())
   },[])
   
-console.log(parlament);
+
 
   return (
 

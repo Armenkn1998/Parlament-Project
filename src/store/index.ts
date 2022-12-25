@@ -1,9 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
-import  parlamentReducer from "./slice/parlamentSlice"
+import  parlamentReducer from "./slice/parlamentSlice";
+import MpsnumberReducer from "./slice/MpsnumberSlice";
+import CommitteReducer from "./slice/CommitteSlice";
+import FractionReducer from "./slice/FractionSlice"
 
 export const store = configureStore({
   reducer: {
-  parlament:parlamentReducer
+  parlament:parlamentReducer,
+  Mpsnumber: MpsnumberReducer,
+  Committe: CommitteReducer,
+  Fraction: FractionReducer
   }
 })
 
