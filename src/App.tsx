@@ -1,9 +1,7 @@
-import React from 'react';
 import {Routes,Route} from "react-router-dom"
-import { Header } from './components/Header';
-import { CommitteesPage } from './pages/CommitteesPage';
+import { CommitteesPage } from './pages/Committees/CommitteesPage';
 import { DepNumbersPage } from './pages/DepNumbersPage';
-import { DocCirculationPage } from './pages/DocCirculationPage';
+import { DocCirculationPage } from './pages/DocCirculation/DocCirculationPage';
 import { HomePage } from './pages/HomePage';
 import { MeetingsSchedulePage } from './pages/MeetingsSchedulePage';
 import { MPNumbersPage } from './pages/MPNumbersPage';
