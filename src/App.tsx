@@ -5,7 +5,7 @@ import { CommitteesPage } from './pages/CommitteesPage';
 import { DepNumbersPage } from './pages/DepNumbersPage';
 import { DocCirculationPage } from './pages/DocCirculationPage';
 import { HomePage } from './pages/HomePage';
-import { MeetingsSchedulePage } from './pages/MeetingsSchedulePage';
+import { MeetingsSchedulePage } from './pages/MeetingsSchedule/MeetingsSchedulePage';
 import { MPNumbersPage } from './pages/MPNumbersPage';
 import { TimeTablePage } from './pages/TimeTablePage';
 
