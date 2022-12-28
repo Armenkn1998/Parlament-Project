@@ -13,46 +13,58 @@ interface Ibos {
 }
 export const MPsPage = () => {
 
-  const [nobos, setNobos] = useState<Ibos[]>([])
-  const [newsortnobos, setnewsortnobos] = useState<any>([])
-  const bos: Ibos[] = []
+  const nobos:Ibos[]=[]
+  const newsortnobos: any = []
+  const aybub:any = []
+
+  const bos:Ibos[]=[]
 
 
-  let aybub: any = []
-  let x: any = []
+
+
 
   const { MPs } = useAppSelector(state => state.Mpsnumber)
   const dispatch = useAppDispatch()
 
   useEffect(() => {
     dispatch(fetchMpsnumber())
-
-
-    const newnobos: Ibos[] = MPs.filter(item => item.key === "noboss")
-
-
-    newnobos.sort((a, b) => (a.lastname > b.lastname) ? 1 : -1)
-    nobos.push(...newnobos)
   
-  
-  
-    for (let i = 0; i < nobos.length; i++) {
-      aybub.push(nobos[i].lastname[0])
-    }
-  
-  
-    for (let i = 0; i < aybub.length; i++) {
-      if (aybub[i] !== aybub[i + 1]) {
-        newsortnobos.push(aybub[i])
-      }
-    }
-  
-
+ 
   }, [])
 
+// console.log(typeof MPs);
 
-  const newMOs: Ibos[] = MPs.filter(item => item.key === "boss")
-  bos.push(...newMOs);
+ 
+  const newMOs:any = MPs.filter(item => item.key === "boss")
+  bos.push(...newMOs)
+
+
+
+
+
+
+  const newnobos: Ibos[] = MPs.filter(item => item.key === "noboss")
+  
+  
+  let y = newnobos.sort((a, b) => (a.lastname > b.lastname) ? 1 : -1)
+ nobos.push(...y)
+
+ 
+  for (let i = 0; i < nobos.length; i++) {
+    aybub.push(nobos[i].lastname[0])
+
+  }
+ 
+
+
+
+  for (let i = 0; i < aybub.length; i++) {
+    if (aybub[i] !== aybub[i + 1]) {
+      newsortnobos.push(aybub[i])
+    }
+  }
+
+    
 
 
 
@@ -86,17 +98,19 @@ export const MPsPage = () => {
 
         </tbody>
       </table>
-      <div className='alfa'>
+      <div className=''>
         {
           newsortnobos.map((item: string, index: number) =>
             item != item + 1 &&
             <div key={index}><div>
-              <div> {item}</div>
+              <div className='alfa'> <p>{item}</p></div>
+              
             </div>
 
 
-              <table className='table0'><tbody>
-
+              <table className='table0'>
+                <tbody>
+                
                 {nobos.map((iteme) =>
                   iteme.lastname[0] === item &&
 

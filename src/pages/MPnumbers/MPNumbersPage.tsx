@@ -34,7 +34,7 @@ export const MPNumbersPage = () => {
       <div className='container6'>
         <div className='container7'>
           <img src='./images/Phone.png' alt='' />
-          { step && <span>Պատգամավորների աշխատանքային հեռախոսահամարները</span>}
+          { step &&<span>Պատգամավորների աշխատանքային հեռախոսահամարները</span>}
           { step1 &&   <span>Հանձնաժողովների հեռախոսահամարները</span>}
           { step2 && <span>Խմբակցությունների հեռախոսահամարները</span>}
         </div>

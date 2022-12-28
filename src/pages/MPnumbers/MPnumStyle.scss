@@ -1,22 +1,23 @@
 .number{
     width: 45rem;
-    height: 66.8rem;
-
+    background: url(../../../public/images/Fon.png);
     margin: 0 auto;
+   height: 1020px;
 
 .container6{
         width: 89%;
-         border: 0.5px solid #94A3BA;
+  
+        border: 0.5px solid #94A3BA;
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         margin: 2.5rem auto;
         padding: 1rem;
-
+        background: #FFFFFF;
      
     
         .container7 {
             width: 100%;
-            height: 8%;
+            height: 80px;
             border-bottom: solid 1px #94A3BA;
             display: flex;
             align-items: center;
