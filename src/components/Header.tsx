@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div className='Header'>
         <div className="header_box">
-            <a href="/"><FontAwesomeIcon icon={faAngleLeft} />&nbsp;&nbsp;Գլխավոր</a>
+            <a href="/"><FontAwesomeIcon icon={faAngleLeft} />&nbsp;&nbsp;Հետ</a>
             <img src="./images/HeaderLogo.png" alt="" />
         </div>
        
