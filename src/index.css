@@ -4,8 +4,9 @@
 }
 
 .App {
-  width: 720px;
+  width: 45rem;
   margin: auto;
+  background-image: url(../public/images/Group.png);
 }
 
 .header {
