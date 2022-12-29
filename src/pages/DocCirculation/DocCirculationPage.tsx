@@ -1,10 +1,11 @@
 import { Header } from '../../components/Header/Header'
-import './DocCirculation.scss';
 import { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../../hooks/redux'
 import { fetchDocCirculation } from "../../store/action/DocCirculationActions";
+import './DocCirculation.scss';
 
 export const DocCirculationPage = () => {
+
   const { DocCirculation_1, DocCirculation_2, DocCirculation_3 } = useAppSelector(state => state.DocCirculation)
   const dispatch = useAppDispatch()
 
@@ -21,8 +22,6 @@ export const DocCirculationPage = () => {
           <h2>Քաղաքացիների ընդունելության և  փաստաթղթաշրջանառության կարգը</h2>
         </div>
         <hr />
-
-
         <div className='DocCirculation_main'>
           <h2>ԿԱՐԳ</h2>
           <div className='DocCirculation_main_page'>
