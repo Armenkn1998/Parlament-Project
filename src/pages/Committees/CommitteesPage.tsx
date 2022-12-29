@@ -1,5 +1,5 @@
 import './Committees.scss'
-import { Header} from '../../components/Header/Header'
+import { Header } from '../../components/Header/Header'
 import { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../../hooks/redux'
 import { fetchCommittees } from "../../store/action/CommitteesActions";
@@ -11,13 +11,10 @@ export const CommitteesPage = () => {
   useEffect(() => {
     dispatch(fetchCommittees())
   }, [])
-
-console.log(Committees);
-
+  
   return (
-    
     <div className='Committees'>
-      <Header/>
+      <Header />
       <div className='CommitteesBody'>
         <div className='Committees_title'>
           <img src="./images/Frame3.png" alt="" />
@@ -28,7 +25,7 @@ console.log(Committees);
           <h2>ՀՀ ԱԶԳԱՅԻՆ ԺՈՂՈՎԻ ՄՇՏԱԿԱՆ ՀԱՆՁՆԱԺՈՂՈՎՆԵՐԸ ԵՎ ՆՐԱՆՑ ԳՈՐԾՈՒՆԵՈՒԹՅԱՆ ՈԼՈՐՏՆԵՐԸ</h2>
           <div className='Committees_main_page'>
             {
-              Committees.map(item=><div key={item.id}>
+              Committees.map(item => <div key={item.id}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>)

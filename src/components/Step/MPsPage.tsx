@@ -32,7 +32,6 @@ export const MPsPage = () => {
  
   }, [])
 
-// console.log(typeof MPs);
 
  
   const newMOs:any = MPs.filter(item => item.key === "boss")
@@ -111,11 +110,11 @@ export const MPsPage = () => {
               <table className='table0'>
                 <tbody>
                 
-                {nobos.map((iteme) =>
+                {nobos.map((iteme,index) =>
                   iteme.lastname[0] === item &&
 
                   <tr key={iteme.id}>
-                    <td className='td1'>{iteme.id}</td>
+                    <td className='td1'>{index+1}</td>
                     <td className='td2'>{iteme.lastname}      {iteme.name} {iteme.firstname}</td>
                     <td className='td4'>{iteme.phonenumber}</td>
                   </tr>
