@@ -2,7 +2,6 @@ export interface IParlament{
     id:number;
     title:string;
     description:string;
-<<<<<<< HEAD
     img:string
 }
 export interface IDocCirculation{
@@ -17,9 +16,8 @@ export interface ICommittees{
     title:string,
     text:string
 }
-=======
-<<<<<<< HEAD
-};
+
+
 
 export interface IMPs    {
     id:number,
@@ -48,8 +46,7 @@ export interface IFraction    {
     cityphone:string,
     internalphone: string,
 };
-=======
-}
+
 
 export interface IDepnumbers{
     id:number;
@@ -63,5 +60,3 @@ export interface ITime{
     title:string;
     tel:string;
 }
->>>>>>> add7a6ed5632d1f5d8f8fba49293308aacb66dc6
->>>>>>> 9aada5923784383646877976db1a84f3c4217a65

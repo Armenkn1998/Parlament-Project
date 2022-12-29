@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Header } from '../../components/Header';
+import { Header } from '../../components/Header/Header';
 import { useAppSelector, useAppDispatch } from '../../hooks/redux'
 import { fetchDepNum } from "../../store/action/depNumbersActions";
 import "./depNum.scss"

@@ -5,7 +5,7 @@ import './StepStyle.scss'
 
 export const CommittePage = () => {
 
-  const {Committe} = useAppSelector(state => state.Committe)
+  const {Committe} = useAppSelector(state => state.Committes)
   const dispatch = useAppDispatch()
   
   useEffect(()=>{

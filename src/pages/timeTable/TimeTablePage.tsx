@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Header } from '../../components/Header';
+import { Header } from '../../components/Header/Header';
 import { fetching,fetchSuccess,fetchError } from '../../store/slice/timeTableSlice';
 import { useAppSelector, useAppDispatch } from '../../hooks/redux'
 import { fetchTimeTable } from "../../store/action/timeTableActions";

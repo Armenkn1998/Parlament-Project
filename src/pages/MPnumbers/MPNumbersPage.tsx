@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import { Header } from '../../components/Header';
+import { Header } from '../../components/Header/Header';
 import { MPsPage } from '../../components/Step/MPsPage';
 import { CommittePage } from '../../components/Step/CommittePage';
 import { FactionPage } from '../../components/Step/FactionPage';
