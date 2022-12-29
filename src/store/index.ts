@@ -1,9 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import  parlamentReducer from "./slice/parlamentSlice"
+import depNumbersReducer from './slice/depNumbersSlice'
+import timeTableReducer from "./slice/timeTableSlice"
 
 export const store = configureStore({
   reducer: {
-  parlament:parlamentReducer
+  parlament:parlamentReducer,
+  admission:depNumbersReducer,
+  telNumbers:timeTableReducer
   }
 })
 
