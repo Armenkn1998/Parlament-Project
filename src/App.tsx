@@ -4,7 +4,7 @@ import { DepNumbersPage } from './pages/DepNumbersPage';
 import { DocCirculationPage } from './pages/DocCirculationPage';
 import { HomePage } from './pages/HomePage';
 import { MeetingsSchedulePage } from './pages/MeetingsSchedulePage';
-import { MPNumbersPage } from './pages/MPnumbers/MPNumbersPage';
+import { MPNumbersPage } from './pages/MPNumbersPage';
 import { TimeTablePage } from './pages/TimeTablePage';
 
 function App() {
