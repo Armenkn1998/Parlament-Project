@@ -1,0 +1,253 @@
+.table3{
+  
+    margin: 1.5rem;
+    thead{
+        border: solid 1px;
+        background: #E1AA5A;
+        color: white;
+        font-weight: 700;
+        font-size: .67rem;
+        line-height: 1.5rem;  
+        .th1, .th2{
+            width: 12.5rem;
+        
+            text-align: left;
+            padding-left: 0.5rem;
+        }
+        .th3{
+            width: 5.9rem;
+   
+
+        }
+        .th4{
+            width: 5.7rem;
+         
+        }
+    }
+    tbody{
+        font-weight: 700;
+        font-size: .67rem;
+        line-height: 1.5rem; 
+       
+        .td1{
+        width: 12.5rem;
+       
+        border-left: solid 4px #E1AA5A;
+        background: #F5F5F5;
+        text-align: left;
+        padding-left: 0.5rem;
+            
+        }
+        .td2{
+            width: 12.5rem;
+         
+            background-color: #F5F5F5;
+            text-align: left;
+            padding-left: 0.5rem;
+          }
+          .td3{
+            width: 5.9rem;
+            background: #E1E1E1;
+          
+            
+
+          }
+          .td4{
+            width: 5.7rem;
+            background: #E1E1E1;
+           
+            padding-left: 2rem;
+          }
+    }
+   
+}
+.table2{
+  
+    margin: 1.5rem;
+    thead{
+        border: solid 1px;
+        background: #E1AA5A;
+        color: white;
+        font-weight: 400;
+        font-size: .67rem;
+        line-height: 1.5rem;  
+        .th1, .th2{
+            width: 12.5rem;
+       
+            text-align: left;
+            padding-left: 0.5rem;
+        }
+        .th3{
+            width: 5.9rem;
+          
+        
+
+        }
+        .th4{
+            width: 5.7rem;
+        
+        }
+    }
+    tbody{
+
+        font-weight: 400;
+        font-size: .67rem;
+        line-height: 1.5rem;  
+       
+        .td1{
+        width: 12.5rem;
+       
+        border-left: solid 4px #E1AA5A;
+        background: #F5F5F5;
+        text-align: left;
+        padding-left: 0.5rem;
+            
+        }
+        .td2{
+            width: 12.5rem;
+            
+            background-color: #F5F5F5;
+            text-align: left;
+            padding-left: 0.5rem;
+          }
+          .td3{
+            width: 5.9rem;
+            background: #E1E1E1;
+        
+            text-align: left;
+            padding-left: 2.5rem;
+
+          }
+          .td4{
+            width: 5.7rem;
+            background: #E1E1E1;
+          
+            text-align: left;
+            padding-left: 3rem ;
+          }
+    }
+   
+}
+.table1{
+  
+    margin: 1.5rem 1.5rem .5rem 1.23rem;
+    font-size: .67rem;
+    line-height: 1.5rem; 
+    width: 38rem;
+
+    thead{
+        border: solid 1px;
+        background: #E1AA5A;
+        color: white;
+        font-weight: 400;
+        font-size: .67rem;
+        line-height: 1.5rem;  
+        .th1{
+            width: 1.8rem;
+            height: 28px;
+            text-align: left;
+            padding-left: 0.5rem;
+        }
+        .th2{
+            width: 26rem;
+            height: 28px;
+            text-align: left;
+            padding-left: 0.5rem;
+        }
+        
+        .th4{
+            width: 5.8rem;
+            height: .7rem;
+        }
+    }
+    tbody{
+
+       
+        font-weight: 400;
+        font-size: .67rem;
+        line-height: 1.5rem;  
+       
+        .td1{
+        width: 1.8rem;
+        height: 28px;
+        border-left: solid 4px #E1AA5A;
+        background: #F5F5F5;
+        text-align: left;
+        padding-left: 0.5rem;
+            
+        }
+        .td2{
+            width: 29.5rem;
+            height: 28px;
+            background-color: #F5F5F5;
+            text-align: left;
+            padding-left: 0.5rem;
+          }
+        
+         
+          .td4{
+            height: 28px;
+            width: 5.8rem;
+            background: #E1E1E1;
+            text-align: left;
+            padding-left: 3rem ;
+          }
+    }
+   
+}
+
+.table0{
+ 
+    margin: 1.5rem 1.5rem .5rem 1.23rem;
+    width: 38rem;
+    border-top: solid 4px #E1AA5A;
+   
+    tbody{
+
+       
+        font-weight: 400;
+        font-size: .67rem;
+        line-height: 1.5rem;  
+     
+
+        .td1{
+        width: 1.8rem;
+        height: 28px;
+        border-left: solid 4px #E1AA5A;
+        background: #F5F5F5;
+        text-align: left;
+        padding-left: 0.5rem;
+            
+        }
+        .td2{
+            width: 29.5rem;
+            background-color: #F5F5F5;
+            text-align: left;
+            padding-left: 0.5rem;
+          }
+        
+         
+          .td4{
+            width: 5.8rem;
+            background: #E1E1E1;
+            text-align: left;
+            padding-left: 3rem ;
+          }
+    }
+   
+}
+.alfa {
+
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: -28px;
+    display: flex;
+    background: #E1AA5A;
+    font-size: 13px;
+    font-weight: 700;
+    width: 2.2rem;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+
+}

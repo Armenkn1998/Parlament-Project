@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'
+import {useState,useEffect} from 'react';
+
+import {useNavigate} from 'react-router-dom'
 import { useAppSelector, useAppDispatch } from '../hooks/redux'
 import { fetchParlament } from "../store/action/parlamentActions";
 
@@ -12,7 +13,8 @@ export const HomePage = () => {
 
   useEffect(() => {
     dispatch(fetchParlament())
-  }, [])
+  },[])
+  
 
 
   return (
