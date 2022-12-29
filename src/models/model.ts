@@ -2,6 +2,7 @@ export interface IParlament{
     id:number;
     title:string;
     description:string;
+<<<<<<< HEAD
 };
 
 export interface IMPs    {
@@ -31,3 +32,19 @@ export interface IFraction    {
     cityphone:string,
     internalphone: string,
 };
+=======
+}
+
+export interface IDepnumbers{
+    id:number;
+    name:string;
+    day:string;
+    time:string;
+}
+
+export interface ITime{
+    id:number;
+    title:string;
+    tel:string;
+}
+>>>>>>> add7a6ed5632d1f5d8f8fba49293308aacb66dc6

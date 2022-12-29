@@ -1,0 +1,68 @@
+import { useEffect } from 'react';
+import { Header } from '../../components/Header';
+import { useAppSelector, useAppDispatch } from '../../hooks/redux'
+import { fetchDepNum } from "../../store/action/depNumbersActions";
+import "./depNum.scss"
+
+
+export const DepNumbersPage = () => {
+
+  const {admission, citizenAdmission} = useAppSelector(state => state.admission)
+  const dispatch = useAppDispatch()
+  
+  useEffect(()=>{
+    dispatch(fetchDepNum())
+  },[])
+
+  return (
+    <div className='depNum'>
+      <Header/>
+      <div className='main_1'>
+        <div className='header_'>
+          <img src="./images/day.png" alt='' />
+          <h2>Քաղաքացիների ընդունելության ժամանակացույց</h2>
+        </div>
+
+        <h3 className='h3-1'>ԺԱՄԱՆԱԿԱՑՈՒՅՑ ԱԶԳԱՅԻՆ ԺՈՂՈՎԻ ՄՇՏԱԿԱՆ ՀԱՆՁՆԱԺՈՂՈՎՆԵՐԻ ԿՈՂՄԻՑ  ՔԱՂԱՔԱՑԻՆԵՐԻ ԸՆԴՈՒՆԵԼՈՒԹՅՈՒՆՆԵՐԻ(2022 թ. նոյեմբեր)</h3>
+
+        <table className='secondTable'>
+          <thead>
+            <tr>
+              <th>Ստորաբաժանման անվանումը</th>
+              <th>Օրը</th>
+              <th>Ժամը</th>
+            </tr>
+          </thead>
+          {
+            admission.map(item=> <tbody key={item.id}><tr> 
+              <td>{item.name}</td>
+              <td>{item.day}</td>
+              <td>{item.time}</td>
+              </tr></tbody>
+            )
+          }
+        </table>
+
+        <h3 className='h3-2'>ԺԱՄԱՆԱԿԱՑՈՒՅՑ ԱԶԳԱՅԻՆ ԺՈՂՈՎԻ ՆԱԽԱԳԱՀԻ ՏԵՂԱԿԱԼՆԵՐԻ ԿՈՂՄԻՑ ԿԱԶՄԱԿԵՐՊՎՈՂՔԱՂԱՔԱՑԻՆԵՐԻ ԸՆԴՈՒՆԵԼՈՒԹՅՈՒՆՆԵՐԻ</h3>
+        <table>
+          <thead className='secondTable'>
+            <tr>
+              <th>Ստորաբաժանման անվանումը</th>
+              <th>Օրը</th>
+              <th>Ժամը</th>
+            </tr>
+          </thead>
+        {
+          citizenAdmission.map(item=> <tbody key={item.id}><tr> 
+            <td>{item.name}</td>
+            <td>{item.day}</td>
+            <td>{item.time}</td>
+            </tr></tbody>
+          )
+        }
+        </table>
+      </div>
+      
+    </div>
+  )
+}
