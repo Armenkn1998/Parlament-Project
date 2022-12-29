@@ -3,6 +3,22 @@ export interface IParlament{
     title:string;
     description:string;
 <<<<<<< HEAD
+    img:string
+}
+export interface IDocCirculation{
+    id:number,
+    text:string,
+    text_A?:string,
+    text_B?:string,
+
+}
+export interface ICommittees{
+    id:number,
+    title:string,
+    text:string
+}
+=======
+<<<<<<< HEAD
 };
 
 export interface IMPs    {
@@ -48,3 +64,4 @@ export interface ITime{
     tel:string;
 }
 >>>>>>> add7a6ed5632d1f5d8f8fba49293308aacb66dc6
+>>>>>>> 9aada5923784383646877976db1a84f3c4217a65
