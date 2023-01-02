@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../../hooks/redux'
 import { fetchMpsnumber } from "../../store/action/NumbersAction";
 import './StepStyle.scss'
@@ -81,7 +81,7 @@ const newnobos= MPs.filter(item => item.key === "noboss")
       <div className=''>
         {
           newsortnobos.map((item: string, index: number) =>
-            item != item + 1 &&
+            item !== item + 1 &&
             <div key={index}><div>
               <div className='alfa'> <p>{item}</p></div>
               
@@ -95,7 +95,7 @@ const newnobos= MPs.filter(item => item.key === "noboss")
                   iteme.lastname[0] === item &&
 
                   <tr key={iteme.id}>
-                    <td className='td1'>{index+1}</td>
+                    <td className='td1'>{index+4}</td>
                     <td className='td2'>{iteme.lastname}      {iteme.name} {iteme.firstname}</td>
                     <td className='td4'>{iteme.phonenumber}</td>
                   </tr>

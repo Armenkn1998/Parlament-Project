@@ -39,30 +39,35 @@
          display: flex;
          align-items: center;
          justify-content: center;
+       
            
             .pasive{
                 background: #FFFFFF;
                 margin-top: 1.87rem;
-                width: 24%;
+                width: 168px;
                 height: 30px;
                 border: 1px solid #263849;
                 cursor: pointer;
                 color: #263849;
                 font-weight: 700;
-                font-size: 0.9rem;
+                font-size: 14px;
                 line-height: 20px;
+                border-radius: 4px;
+                margin-left: 10px;
             }
             .active{
                 background: #263849;
                 margin-top: 1.87rem;
-                width: 24%;
+                width: 168px;
                 height: 30px;
                 border: 1px solid #263849;
                 cursor: pointer;
                 color: #FFFFFF;
                 font-weight: 700;
-                font-size: 0.9rem;
+                font-size: 14px;
                 line-height: 20px;
+                border-radius: 4px;
+                margin-left: 10px;
             }
         }
     
