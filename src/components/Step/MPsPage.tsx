@@ -14,39 +14,29 @@ interface Ibos {
 export const MPsPage = () => {
 
   const nobos:Ibos[]=[]
-  const newsortnobos: any = []
-  const aybub:any = []
+  const newsortnobos: string[] = []
+  const aybub:string[] = []
 
   const bos:Ibos[]=[]
-
-
-
-
 
   const { MPs } = useAppSelector(state => state.Mpsnumber)
   const dispatch = useAppDispatch()
 
   useEffect(() => {
     dispatch(fetchMpsnumber())
-  
- 
-  }, [])
+   
+  }, [dispatch])
 
 
  
-  const newMOs:any = MPs.filter(item => item.key === "boss")
-  bos.push(...newMOs)
+const newMOs = MPs.filter(item => item.key === "boss")
+ bos.push(...newMOs)
 
 
-
-
-
-
-  const newnobos: Ibos[] = MPs.filter(item => item.key === "noboss")
+const newnobos= MPs.filter(item => item.key === "noboss")
   
-  
-  let y = newnobos.sort((a, b) => (a.lastname > b.lastname) ? 1 : -1)
- nobos.push(...y)
+ const sortnobos= newnobos.sort((a, b) => (a.lastname > b.lastname) ? 1 : -1)
+ nobos.push(...sortnobos)
 
  
   for (let i = 0; i < nobos.length; i++) {
@@ -55,20 +45,11 @@ export const MPsPage = () => {
   }
  
 
-
-
   for (let i = 0; i < aybub.length; i++) {
     if (aybub[i] !== aybub[i + 1]) {
       newsortnobos.push(aybub[i])
     }
   }
-
-    
-
-
-
-
-
 
 
 
