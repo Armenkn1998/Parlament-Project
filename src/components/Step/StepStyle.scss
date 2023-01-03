@@ -1,11 +1,13 @@
+$orange:#E1AA5A;
+$litegray:#F5F5F5;
+$darkgray:#E1E1E1;
 .table3 {
-
-    margin: 1.5rem;
+     margin: 1.5rem;
     font-weight: 700;
 
     thead {
         border: solid 1px;
-        background: #E1AA5A;
+        background: $orange;
 
         font-weight: 700;
         font-size: .67rem;
@@ -37,27 +39,27 @@
 
         .td1 {
             width: 12.5rem;
-            border-left: solid 4px #E1AA5A;
-            background: #F5F5F5;
+            border-left: solid 4px $orange;
+            background: $litegray;
             text-align: left;
             padding-left: 0.8rem;
         }
 
         .td2 {
             width: 12.5rem;
-            background-color: #F5F5F5;
+            background-color: $litegray;
             text-align: left;
             padding-left: 0.7rem;
         }
 
         .td3 {
             width: 5.9rem;
-            background: #E1E1E1;
+            background: $darkgray;
         }
 
         .td4 {
             width: 5.7rem;
-            background: #E1E1E1;
+            background: $darkgray;
             padding-left: 2rem;
         }
     }
@@ -68,7 +70,7 @@
 
     thead {
         border: solid 1px;
-        background: #E1AA5A;
+        background: $orange;
 
         font-weight: 400;
         font-size: .7rem;
@@ -97,29 +99,29 @@
 
         .td1 {
             width: 12.5rem;
-            border-left: solid 4px #E1AA5A;
-            background: #F5F5F5;
+            border-left: solid 4px $orange;
+            background: $litegray;
             text-align: left;
             padding-left: 0.5rem;
         }
 
         .td2 {
             width: 12.5rem;
-            background-color: #F5F5F5;
+            background-color: $litegray;
             text-align: left;
             padding-left: 0.8rem;
         }
 
         .td3 {
             width: 5.9rem;
-            background: #E1E1E1;
+            background: $darkgray;
             text-align: left;
             padding-left: 2rem;
         }
 
         .td4 {
             width: 5.7rem;
-            background: #E1E1E1;
+            background: $darkgray;
             text-align: left;
             padding-left: 2rem;
         }
@@ -134,7 +136,7 @@
 
     thead {
         border: solid 1px;
-        background: #E1AA5A;
+        background: $orange;
         font-weight: 400;
         font-size: .7rem;
         line-height: 1.5rem;
@@ -167,8 +169,8 @@
         .td1 {
             width: 1.8rem;
             height: 28px;
-            border-left: solid 4px #E1AA5A;
-            background: #F5F5F5;
+            border-left: solid 4px $orange;
+            background: $litegray;
             text-align: left;
             padding-left: 0.5rem;
         }
@@ -176,7 +178,7 @@
         .td2 {
             width: 29.5rem;
             height: 28px;
-            background-color: #F5F5F5;
+            background-color: $litegray;
             text-align: left;
             padding-left: 0.8rem;
         }
@@ -184,7 +186,7 @@
         .td4 {
             height: 28px;
             width: 5.8rem;
-            background: #E1E1E1;
+            background: $darkgray;
             text-align: left;
             padding-left: 2rem;
         }
@@ -194,7 +196,7 @@
 .table0 {
     margin: 1.5rem 1.5rem .5rem .3rem;
     width: 37.1rem;
-    border-top: solid 4px #E1AA5A;
+    border-top: solid 4px $orange;
 
     tbody {
         font-weight: 400;
@@ -204,22 +206,22 @@
         .td1 {
             width: 1.8rem;
             height: 28px;
-            border-left: solid 4px #E1AA5A;
-            background: #F5F5F5;
+            border-left: solid 4px $orange;
+            background: $litegray;
             text-align: left;
             padding-left: 0.5rem;
         }
 
         .td2 {
             width: 29.5rem;
-            background-color: #F5F5F5;
+            background-color: $litegray;
             text-align: left;
             padding-left: 0.8rem;
         }
 
         .td4 {
             width: 5.8rem;
-            background: #E1E1E1;
+            background: $darkgray;
             text-align: left;
             padding-left: 2rem;
         }
@@ -231,7 +233,7 @@
     margin-top: 20px;
     margin-bottom: -28px;
     display: flex;
-    background: #E1AA5A;
+    background: $orange;
     font-size: 13px;
     font-weight: 700;
     width: 2.2rem;

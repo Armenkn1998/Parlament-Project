@@ -46,9 +46,7 @@ const Year = ({
             : new Array(Number(daysOfTheWeekOffset[firstDayOfWeek])).fill('')
 
         const daysArr = new Array(totalDays).fill('')
-          ;
-
-        return (
+           return (
           <div key={pos} className='month' data-testid='month'>
             <div className='month_box'>
               <h3 className='monthName'>{monthName}</h3>
