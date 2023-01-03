@@ -2,10 +2,11 @@
 
     margin: 1.5rem;
     font-weight: 700;
+
     thead {
         border: solid 1px;
         background: #E1AA5A;
-   
+
         font-weight: 700;
         font-size: .67rem;
         line-height: 1.5rem;
@@ -41,16 +42,19 @@
             text-align: left;
             padding-left: 0.8rem;
         }
+
         .td2 {
             width: 12.5rem;
             background-color: #F5F5F5;
             text-align: left;
             padding-left: 0.7rem;
         }
+
         .td3 {
             width: 5.9rem;
             background: #E1E1E1;
         }
+
         .td4 {
             width: 5.7rem;
             background: #E1E1E1;
@@ -58,31 +62,39 @@
         }
     }
 }
+
 .table2 {
     margin: 1.5rem;
+
     thead {
         border: solid 1px;
         background: #E1AA5A;
-      
+
         font-weight: 400;
         font-size: .7rem;
         line-height: 1.5rem;
-        .th1,.th2 {
+
+        .th1,
+        .th2 {
             width: 12.5rem;
             text-align: left;
             padding-left: 0.8rem;
         }
+
         .th3 {
             width: 5.9rem;
         }
+
         .th4 {
             width: 5.7rem;
         }
     }
+
     tbody {
         font-weight: 400;
         font-size: .67rem;
         line-height: 1.5rem;
+
         .td1 {
             width: 12.5rem;
             border-left: solid 4px #E1AA5A;
@@ -90,18 +102,21 @@
             text-align: left;
             padding-left: 0.5rem;
         }
+
         .td2 {
             width: 12.5rem;
             background-color: #F5F5F5;
             text-align: left;
             padding-left: 0.8rem;
         }
+
         .td3 {
             width: 5.9rem;
             background: #E1E1E1;
             text-align: left;
             padding-left: 2rem;
         }
+
         .td4 {
             width: 5.7rem;
             background: #E1E1E1;
@@ -116,33 +131,39 @@
     font-size: .7rem;
     line-height: 1.5rem;
     width: 37.1rem;
+
     thead {
         border: solid 1px;
         background: #E1AA5A;
         font-weight: 400;
         font-size: .7rem;
         line-height: 1.5rem;
+
         .th1 {
             width: 1.9rem;
             height: 28px;
             text-align: left;
             padding-left: 0.2rem;
         }
+
         .th2 {
             width: 29.5rem;
             height: 28px;
             text-align: left;
             padding-left: 0.8rem;
         }
+
         .th4 {
             width: 5.8rem;
             height: .7rem;
         }
     }
+
     tbody {
         font-weight: 400;
         font-size: .67rem;
         line-height: 1.5rem;
+
         .td1 {
             width: 1.8rem;
             height: 28px;
@@ -151,6 +172,7 @@
             text-align: left;
             padding-left: 0.5rem;
         }
+
         .td2 {
             width: 29.5rem;
             height: 28px;
@@ -158,6 +180,7 @@
             text-align: left;
             padding-left: 0.8rem;
         }
+
         .td4 {
             height: 28px;
             width: 5.8rem;
@@ -172,10 +195,12 @@
     margin: 1.5rem 1.5rem .5rem .3rem;
     width: 37.1rem;
     border-top: solid 4px #E1AA5A;
+
     tbody {
         font-weight: 400;
         font-size: .7rem;
         line-height: 1.5rem;
+
         .td1 {
             width: 1.8rem;
             height: 28px;
@@ -184,12 +209,14 @@
             text-align: left;
             padding-left: 0.5rem;
         }
+
         .td2 {
             width: 29.5rem;
             background-color: #F5F5F5;
             text-align: left;
             padding-left: 0.8rem;
         }
+
         .td4 {
             width: 5.8rem;
             background: #E1E1E1;

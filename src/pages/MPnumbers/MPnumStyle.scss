@@ -1,47 +1,47 @@
-.number{
+.number {
     width: 45rem;
     background: url(../../../public/images/Fon.png);
     margin: 0 auto;
-   height: 1020px;
+    height: 1020px;
 
-.container6{
+    .container6 {
         width: 89%;
-  
+
         border: 0.5px solid #94A3BA;
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         margin: 2.5rem auto;
         padding: 1rem;
         background: #FFFFFF;
-     
-    
+
+
         .container7 {
             width: 100%;
             height: 80px;
             border-bottom: solid 1px #94A3BA;
             display: flex;
             align-items: center;
-            img{
-                
+
+            img {
                 margin-left: 1.5rem;
             }
-    
-            span{
-               
+
+            span {
+
                 font-weight: 700;
                 font-size: 0.87rem;
                 line-height: 30px;
                 margin: 2.6rem;
             }
         }
-        .buttons{
-         width: 100%;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-       
-           
-            .pasive{
+
+        .buttons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .pasive {
                 background: #FFFFFF;
                 margin-top: 1.87rem;
                 width: 168px;
@@ -55,7 +55,8 @@
                 border-radius: 4px;
                 margin-left: 10px;
             }
-            .active{
+
+            .active {
                 background: #263849;
                 margin-top: 1.87rem;
                 width: 168px;
@@ -70,6 +71,6 @@
                 margin-left: 10px;
             }
         }
-    
+
     }
 }
