@@ -48,14 +48,14 @@ export interface IFraction    {
 };
 
 
-export interface IDepnumbers{
+export interface ITime{
     id:number;
     name:string;
     day:string;
     time:string;
 }
 
-export interface ITime{
+export interface IDepnumbers{
     id:number;
     title:string;
     tel:string;

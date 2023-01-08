@@ -4,17 +4,19 @@ import { ITime } from '../../models/model'
 interface TimeTableState {
    loading: boolean;
    error:string;
-   telNumbers:ITime[]
+   admission:ITime[],
+   citizenAdmission:ITime[]
 }
 
 const initialState: TimeTableState = {
     loading: false,
     error:"",
-    telNumbers:[]
+    admission:[],
+    citizenAdmission:[]
 }
 
 export const timeTableSlice = createSlice({
-  name: 'telNumbers',
+  name: 'admission',
   initialState,
   reducers: {
     fetching(state){
@@ -22,9 +24,14 @@ export const timeTableSlice = createSlice({
     },
     fetchSuccess(state,action: PayloadAction<ITime[]>){
         state.loading = false;
-        state.telNumbers = action.payload;
+        state.admission = action.payload;
         state.error = ''
     },
+    fetchSuccess1(state,action: PayloadAction<ITime[]>){
+      state.loading = false;
+      state.citizenAdmission = action.payload;
+      state.error = ''
+  },
     fetchError(state,action: PayloadAction<Error>){
         state.loading = false;
         state.error = action.payload.message
@@ -32,7 +39,7 @@ export const timeTableSlice = createSlice({
   }
 })
 
-export const {  fetching, fetchSuccess, fetchError } = timeTableSlice.actions
+export const {  fetching, fetchSuccess, fetchSuccess1, fetchError } = timeTableSlice.actions
 
 
 export default timeTableSlice.reducer
