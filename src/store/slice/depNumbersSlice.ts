@@ -4,19 +4,17 @@ import { IDepnumbers } from '../../models/model'
 interface DepNumbersState {
    loading: boolean;
    error:string;
-   admission:IDepnumbers[],
-   citizenAdmission:IDepnumbers[]
+   depnum:IDepnumbers[]
 }
 
 const initialState: DepNumbersState = {
     loading: false,
     error:"",
-    admission:[],
-    citizenAdmission:[]
+    depnum:[]
 }
 
 export const depNumberSlice = createSlice({
-  name: 'admission',
+  name: 'depnum',
   initialState,
   reducers: {
     fetching(state){
@@ -24,14 +22,9 @@ export const depNumberSlice = createSlice({
     },
     fetchSuccess(state,action: PayloadAction<IDepnumbers[]>){
         state.loading = false;
-        state.admission = action.payload;
+        state.depnum = action.payload;
         state.error = ''
     },
-    fetchSuccess1(state,action: PayloadAction<IDepnumbers[]>){
-      state.loading = false;
-      state.citizenAdmission = action.payload;
-      state.error = ''
-  },
     fetchError(state,action: PayloadAction<Error>){
         state.loading = false;
         state.error = action.payload.message
@@ -39,7 +32,7 @@ export const depNumberSlice = createSlice({
   }
 })
 
-export const {  fetching, fetchSuccess, fetchSuccess1, fetchError } = depNumberSlice.actions
+export const {  fetching, fetchSuccess, fetchError } = depNumberSlice.actions
 
 
 export default depNumberSlice.reducer

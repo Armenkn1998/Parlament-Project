@@ -11,8 +11,8 @@ import MpsnumberReducer from './slice/MpsnumberSlice'
 export const store = configureStore({
   reducer: {
     parlament: parlamentReducer,
-    admission: depNumbersReducer,
-    telNumbers: timeTableReducer,
+    telNumbers: depNumbersReducer,
+    admission: timeTableReducer,
     Committees:CommitteesReducer,
     Committes:CommittesReducer,
     Fraction:FractionReducer,

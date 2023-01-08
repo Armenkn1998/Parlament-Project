@@ -7,7 +7,7 @@ import "./depNum.scss"
 
 export const DepNumbersPage = () => {
 
-  const {admission, citizenAdmission} = useAppSelector(state => state.admission)
+  const {depnum} = useAppSelector(state => state.telNumbers)
   const dispatch = useAppDispatch()
   
   useEffect(()=>{
@@ -15,54 +15,31 @@ export const DepNumbersPage = () => {
   },[])
 
   return (
-    <div className='depNum'>
-      <Header/>
-      <div className='main_1'>
-        <div className='header_'>
-          <img src="./images/day.png" alt='' />
-          <h2>Քաղաքացիների ընդունելության ժամանակացույց</h2>
-        </div>
-
-        <h3 className='h3-1'>ԺԱՄԱՆԱԿԱՑՈՒՅՑ ԱԶԳԱՅԻՆ ԺՈՂՈՎԻ ՄՇՏԱԿԱՆ ՀԱՆՁՆԱԺՈՂՈՎՆԵՐԻ ԿՈՂՄԻՑ  ՔԱՂԱՔԱՑԻՆԵՐԻ ԸՆԴՈՒՆԵԼՈՒԹՅՈՒՆՆԵՐԻ(2022 թ. նոյեմբեր)</h3>
-
-        <table className='secondTable'>
-          <thead>
-            <tr>
-              <th>Ստորաբաժանման անվանումը</th>
-              <th>Օրը</th>
-              <th>Ժամը</th>
-            </tr>
-          </thead>
-          {
-            admission.map(item=> <tbody key={item.id}><tr> 
-              <td>{item.name}</td>
-              <td>{item.day}</td>
-              <td>{item.time}</td>
-              </tr></tbody>
-            )
-          }
-        </table>
-
-        <h3 className='h3-2'>ԺԱՄԱՆԱԿԱՑՈՒՅՑ ԱԶԳԱՅԻՆ ԺՈՂՈՎԻ ՆԱԽԱԳԱՀԻ ՏԵՂԱԿԱԼՆԵՐԻ ԿՈՂՄԻՑ ԿԱԶՄԱԿԵՐՊՎՈՂՔԱՂԱՔԱՑԻՆԵՐԻ ԸՆԴՈՒՆԵԼՈՒԹՅՈՒՆՆԵՐԻ</h3>
-        <table>
-          <thead className='secondTable'>
-            <tr>
-              <th>Ստորաբաժանման անվանումը</th>
-              <th>Օրը</th>
-              <th>Ժամը</th>
-            </tr>
-          </thead>
-        {
-          citizenAdmission.map(item=> <tbody key={item.id}><tr> 
-            <td>{item.name}</td>
-            <td>{item.day}</td>
-            <td>{item.time}</td>
-            </tr></tbody>
-          )
-        }
-        </table>
+    <div className='timeTable'>
+    <Header/>
+    <div className='main_2'>
+      <div className='header_'>
+        <img src="./images/Phones.png" alt='' />
+        <h2>Կառուցվածքային ստորաբաժանումների հեռախոսահամարներ</h2>
       </div>
-      
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ստորաբաժանման անվանումը</th>
+            <th>Ներքին հեռ․</th>
+          </tr>
+        </thead>
+      {
+        depnum.map(item=> <tbody key={item.id}><tr> 
+          <td>{item.title}</td>
+          <td>{item.tel}</td>
+          </tr></tbody>
+        )
+      }
+      </table>
     </div>
+    
+  </div>
   )
 }

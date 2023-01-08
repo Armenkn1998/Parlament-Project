@@ -383,7 +383,7 @@
             "internalphone": "14-65"
         }
     ],
-    "depnum": [
+    "telNumbers": [
         {
             "admission": [
                 {
@@ -475,7 +475,7 @@
             ]
         }
     ],
-    "telNumbers": [
+    "depnum": [
         {
             "id": 1,
             "title": "Քարտուղարություն",
