@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import Calendar from './../components/Calendar'
+import Calendar from '..'
 
 export default {
   title: 'Calendar',

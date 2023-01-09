@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from '../../components/Header';
 
-import Calendar  from './src';
+import Calendar  from '../../components/Calendar';
 import  "./index.scss"
 export const MeetingsSchedulePage = () => {
   

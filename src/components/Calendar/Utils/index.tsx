@@ -1,6 +1,5 @@
 import dayjs from 'dayjs'
 import customParseFormat from 'dayjs/plugin/customParseFormat'
-dayjs.extend(customParseFormat)
 
 import {
   IGetMonthName,
@@ -9,6 +8,8 @@ import {
   DaysOfWeekOffsetType,
   DayOffset,
 } from '../types'
+dayjs.extend(customParseFormat)
+
 
 const dateFormat = 'M-D-YYYY'
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import dayjs from 'dayjs'
 import isBetween from 'dayjs/plugin/isBetween'
-import { IYear } from './../types'
-import { daysOfTheWeek, daysOfTheWeekOffset, getMonthName } from './../Utils'
+import { IYear } from '../types'
+import { daysOfTheWeek, daysOfTheWeekOffset, getMonthName } from '../Utils'
 import { useState,useEffect } from 'react'
 
 dayjs.extend(isBetween)
