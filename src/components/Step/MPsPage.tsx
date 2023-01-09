@@ -16,7 +16,6 @@ export const MPsPage = () => {
   const nobos: Ibos[] = []
   const newsortnobos: string[] = []
   const aybub: string[] = []
-
   const bos: Ibos[] = []
 
   const { MPs } = useAppSelector(state => state.Mpsnumber)
