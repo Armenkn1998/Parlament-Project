@@ -1,8 +1,8 @@
 import React from 'react'
 import dayjs from 'dayjs'
 import isBetween from 'dayjs/plugin/isBetween'
-import { IYear } from './../types'
-import { daysOfTheWeek, daysOfTheWeekOffset, getMonthName } from './../Utils'
+import { IYear } from '../types'
+import { daysOfTheWeek, daysOfTheWeekOffset, getMonthName } from '../Utils'
 import { useState, useEffect } from 'react'
 
 dayjs.extend(isBetween)
@@ -18,7 +18,7 @@ const Year = ({
 
   useEffect(() => {
 
-    if (localStorage.length != 0) {
+    if (localStorage.length !== 0) {
       
       let data = localStorage.getItem('data')
       data = JSON.parse(data as any)
@@ -78,7 +78,7 @@ const Year = ({
                       if (select.indexOf(id) >= 0) {
                         setSelect(select.filter((el: string) => {
                           localStorage.setItem('data', JSON.stringify(select))
-                          return el != id
+                          return el !== id
                         }));
                       } if (select.indexOf(id) < 0) {
                         setSelect([id, ...select])

@@ -11,7 +11,7 @@ import {
 
 
 dayjs.extend(customParseFormat)
-const dateFormat = 'M-D-YYYY'
+
 
 export const daysOfTheWeek: DaysOfWeekType = [
   Days.Monday,
