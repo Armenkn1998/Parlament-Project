@@ -1,4 +1,3 @@
-import React from 'react'
 import dayjs from 'dayjs'
 import isBetween from 'dayjs/plugin/isBetween'
 import { IYear } from '../types'
@@ -16,20 +15,11 @@ const Year = ({
 
 
 
-  useEffect(() => {
-
-    if (localStorage.length !== 0) {
-      
-      let data = localStorage.getItem('data')
-      data = JSON.parse(data as any)
-      setSelect(data as any)
-     
-    }
-  },[])
-
   const [select, setSelect] = useState<string[]>([])
 
-
+  console.log(select);
+  localStorage.setItem('data', JSON.stringify(select))
+ 
   return (
     <div className='year' data-testid='year'>
       {new Array(showNumberOfMonths).fill('').map((_, pos) => {
@@ -77,13 +67,12 @@ const Year = ({
 
                       if (select.indexOf(id) >= 0) {
                         setSelect(select.filter((el: string) => {
-                          localStorage.setItem('data', JSON.stringify(select))
                           return el !== id
                         }));
+                        
                       } if (select.indexOf(id) < 0) {
-                        setSelect([id, ...select])
+                        setSelect([...select,id])
                         select.push(id);               
-                        localStorage.setItem('data', JSON.stringify(select));
                       }
 
                     }}

@@ -5,6 +5,7 @@ import { useAppSelector, useAppDispatch } from '../../hooks/redux'
 import { fetchCommittees } from "../../store/action/CommitteesActions";
 
 export const CommitteesPage = () => {
+
   const { Committees } = useAppSelector(state => state.Committees)
   const dispatch = useAppDispatch()
 
