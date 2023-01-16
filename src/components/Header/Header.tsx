@@ -8,7 +8,12 @@ export const Header = () => {
     <div className='Header'>
         <div className="header_box">
             <a href="/"><FontAwesomeIcon icon={faAngleLeft} />&nbsp;&nbsp;Հետ</a>
-            <img src="./images/HeaderLogo.png" alt="" />
+            <div className='logo'> 
+              <img src="./images/Logo.png" alt="" />
+              <h2>Հայաստանի Հանրապետության
+              <p>Ազգային Ժողով
+              </p></h2>
+            </div>
         </div>
        
          

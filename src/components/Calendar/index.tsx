@@ -1,4 +1,3 @@
-import React, {  useState } from 'react'
 import dayjs from 'dayjs'
 import isBetween from 'dayjs/plugin/isBetween'
 import {  isValidMonthsOption } from './Utils'
@@ -16,7 +15,7 @@ const Calendar = ({
 
   const totalCalendarMonths = 12
   const _showNumberOfMonths = isValidMonthsOption(showNumberOfMonths) ? showNumberOfMonths : totalCalendarMonths
-  const [monthsFrom, setMonthsFrom] = useState(initialMonth)
+  const monthsFrom = (initialMonth)
  
   const configYear: IYear = {
     showNumberOfMonths: _showNumberOfMonths,
