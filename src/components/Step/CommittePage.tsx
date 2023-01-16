@@ -17,9 +17,9 @@ export const CommittePage = () => {
              <table className='table2'>
       <thead>
         <tr>
-          <th className='th1'>Կուսակցության&nbsp; Անվանումը</th>
+          <th className='th1'>Հանձնաժողովի&nbsp; Անվանումը</th>
           <th className='th2'>Անդամներ</th>
-          <th className='th3'>Քաղաքային Հեռ․</th>
+          <th className='th3'>Քաղ. Հեռ․</th>
           <th className='th4'>Ներքին  Հեռ․</th>
         </tr>
       </thead>

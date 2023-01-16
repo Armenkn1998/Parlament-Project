@@ -1,11 +1,17 @@
-import {useState} from 'react'
+import {useState, useContext} from 'react'
 import { Header } from '../../components/Header/Header';
 import { MPsPage } from '../../components/Step/MPsPage';
 import { CommittePage } from '../../components/Step/CommittePage';
 import { FactionPage } from '../../components/Step/FactionPage';
 import './MPnumStyle.scss'
+import AuthContext from '../../components/Admin/context/AuthProvider';
+
+
+
 
 export const MPNumbersPage = () => {
+
+  const {auth}:any=useContext(AuthContext)
 
   const [step, setStep] = useState(true);
   const [step1, setStep1] = useState(false);
@@ -56,6 +62,9 @@ export const MPNumbersPage = () => {
      }
     
       </div>
+      <button>
+    {auth.user&&<div>tes</div>}
+      </button>
       </div>
   )
 }

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 1s;
+}
+.Login_section{
+    width: 100%;
+    height:100vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    font-family: 'GHEA Grapalat';
+    font-style: normal;
+
+    .Login_logo{
+        width: 30%;
+        background-color: #263849;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            padding-bottom: 16px;
+        }
+        h2{
+            font-size: 35px;
+            color: white;
+        }
+    }
+    .Login_gerb{
+        width: 100px;
+        height: 100px;
+        background-color: #263849;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 10px solid #fff;
+        position: absolute;
+        left: 27%;
+        top: 45%;
+        img{
+            width: 80%;
+        }
+    }
+    .Login_head{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Login_body{
+            background-color: red;
+        }
+    }
+}

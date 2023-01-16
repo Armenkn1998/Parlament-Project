@@ -5,6 +5,7 @@ import { useAppSelector, useAppDispatch } from '../../hooks/redux'
 import { fetchCommittees } from "../../store/action/CommitteesActions";
 
 export const CommitteesPage = () => {
+
   const { Committees } = useAppSelector(state => state.Committees)
   const dispatch = useAppDispatch()
 
@@ -28,6 +29,7 @@ export const CommitteesPage = () => {
               Committees.map(item => <div key={item.id}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
+                
               </div>)
             }
           </div>
