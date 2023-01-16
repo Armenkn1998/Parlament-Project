@@ -20,6 +20,8 @@ const ROLES = {
 
 function App() {
   const { auth }: any = useAuth();
+  console.log(typeof(auth));
+  
   return (
     <div className='App'>
       <Routes>
