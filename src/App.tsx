@@ -18,9 +18,12 @@ const ROLES = {
   'Admin': 5150
 }
 
+
 function App() {
-  const { auth }: any = useAuth();
-  console.log(typeof(auth));
+  const { auth }:any= useAuth();
+
+
+ 
   
   return (
     <div className='App'>
@@ -47,13 +50,17 @@ function App() {
             <Route path="adminmeetingsSchedule" element={<MeetingsSchedulePage />} />
           </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
-            <Route path="adminmPNumbers" element={<MPNumbersPage />} />
+            <Route path="adminmPNumbers" element={<MPNumbersPage />} >
+              
+            </Route>
           </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
             <Route path="admindepNumbers" element={<DepNumbersPage />} />
           </Route>
         </Route>
+        
       </Routes>
+      
     </div>
   );
 }

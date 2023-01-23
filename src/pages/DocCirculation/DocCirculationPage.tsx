@@ -11,7 +11,7 @@ export const DocCirculationPage = () => {
 
   useEffect(() => {
     dispatch(fetchDocCirculation())
-  }, [])
+  }, [dispatch])
 
   return (
     <div className='DocCirculation'>

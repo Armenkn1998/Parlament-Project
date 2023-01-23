@@ -11,8 +11,8 @@ const PersistLogin = () => {
     const [persist] = useLocalStorage('persist', true);
     const refresh = useRefreshToken();
 
-    useEffect(():any => {
-        let isMounted = true;
+    useEffect(():(()=>void) => {
+        let isMounted:boolean = true;
         const verifyRefreshToken = async () => {
             try {
                 await refresh();
@@ -26,7 +26,7 @@ const PersistLogin = () => {
         }
         !auth?.accessToken && persist ? verifyRefreshToken() : setIsLoading(false);
         return () => isMounted = false;
-    }, [])
+    },[auth, refresh, persist])
 
     return (
         <>

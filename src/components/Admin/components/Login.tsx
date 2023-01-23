@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import useAuth from '../../../hooks/AdminHooks/useAuth'
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import useInput from '../../../hooks/AdminHooks/useInput';
 import useToggle from '../../../hooks/AdminHooks/useToggle';
 
@@ -13,9 +13,9 @@ const Login = () => {
     const { setAuth }:any = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.pathname || "/Admin";
-    const userRef:any = useRef();
-    const errRef:any = useRef();
+    const from = location.state?.from?.pathname || "/admin";
+    const userRef = useRef<any>();
+    const errRef = useRef<HTMLElement| any>();
     const [user, resetUser, userAttribs] = useInput('user', '')
     const [pwd, setPwd] = useState('');
     const [errMsg, setErrMsg] = useState('');
@@ -29,8 +29,10 @@ const Login = () => {
         setErrMsg('');
     }, [user, pwd])
 
-    const handleSubmit = async (e:any) => {
+    const handleSubmit = async (e:React.SyntheticEvent<HTMLFormElement>) => {
         e.preventDefault();
+     
+        
         try {
             const response = await axios.post(LOGIN_URL,
                 JSON.stringify({ user, pwd }),
@@ -38,6 +40,8 @@ const Login = () => {
                     headers: { 'Content-Type': 'application/json' },
                     withCredentials: true
                 }
+           
+                
             );
             const accessToken = response?.data?.accessToken;
             const roles = response?.data?.roles;
@@ -45,12 +49,14 @@ const Login = () => {
             resetUser();
             setPwd('');
             navigate(from, { replace: true });
-        } catch (err : any) {
-            if (!err?.response) {
+        } catch (error: any ) {
+            if (!error?.response ) {
                 setErrMsg('No Server Response');
-            } else if (err.response?.status === 400) {
+            
+                
+            } else if (error.response?.status === 400) {
                 setErrMsg('Missing Username or Password');
-            } else if (err.response?.status === 401) {
+            } else if (error.response?.status === 401) {
                 setErrMsg('Unauthorized');
             } else {
                 setErrMsg('Login Failed');
@@ -62,10 +68,10 @@ const Login = () => {
 
         <section className='Login_section'>
             <div className='Login_logo'>
-                <img src='./images/Logo.png' />
+                <img src='./images/Logo.png' alt=''/>
                 <h2>Ազգային Ժողով</h2>
             </div>
-            <div className='Login_gerb'><img src='./images/gerb.png' /></div>
+            <div className='Login_gerb'><img src='./images/gerb.png' alt='' /></div>
             <div className='Login_head'>
                 <div className='Login_body'>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>

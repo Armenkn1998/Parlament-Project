@@ -11,7 +11,7 @@ export const CommitteesPage = () => {
 
   useEffect(() => {
     dispatch(fetchCommittees())
-  }, [])
+  }, [dispatch])
   
   return (
     <div className='Committees'>

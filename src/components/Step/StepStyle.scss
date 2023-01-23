@@ -1,6 +1,54 @@
 $orange:#E1AA5A;
 $litegray:#F5F5F5;
 $darkgray:#E1E1E1;
+
+.form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 140px;
+    padding-bottom: 10px;
+    width: 20rem;
+    height: 100%; 
+    box-shadow: 0.5px 0.5px 5px $orange;
+    background: #cccccc;
+   input{
+    margin-top: 3px;
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    }
+    label{
+       margin-top: 15px;
+       font-weight: 600;
+
+        }
+        button{
+            width: 80px;
+            height: 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            }
+
+    .button{
+        width: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .button1{
+            background:#EDE9DE;
+            width: 80px;
+        }
+        .button2{
+            background:  #EAEFE3;
+            width: 80px;
+
+        }
+    }
+}
+
 .table3 {
      margin: 1.5rem;
     font-weight: 700;
@@ -61,6 +109,31 @@ $darkgray:#E1E1E1;
             width: 5.7rem;
             background: $darkgray;
             padding-left: 2rem;
+        }
+
+        .td3_input{
+            font-weight: 400;
+            font-size: .67rem;
+            line-height: 1.5rem;
+            width: 5rem;
+            box-shadow: 0.5px 0.5px 5px $orange;
+            border-radius: 5px;
+            margin: 5px 0;
+            
+        }
+
+        .jj{
+            display: flex;
+            flex-direction: column;
+            width: 8rem;
+        }
+        .button{
+            i{
+                cursor: pointer;
+            }
+        }
+        .save{
+            margin-top: 25px;
         }
     }
 }
@@ -125,6 +198,34 @@ $darkgray:#E1E1E1;
             text-align: left;
             padding-left: 2rem;
         }
+        
+    
+        .td2_input{
+            font-weight: 400;
+            font-size: .67rem;
+            line-height: 1.5rem;
+            width: 5rem;
+            box-shadow: 0.5px 0.5px 5px $orange;
+            border-radius: 5px;
+            margin: 5px 0;
+            
+        }
+
+        .jj{
+            display: flex;
+            flex-direction: column;
+            width: 8rem;
+        }
+        .button{
+            i{
+                cursor: pointer;
+            }
+        }
+        .save{
+            margin-top: 25px;
+        }
+        
+        
     }
 }
 
@@ -190,6 +291,27 @@ $darkgray:#E1E1E1;
             text-align: left;
             padding-left: 2rem;
         }
+        .td1_input{
+            font-weight: 400;
+            font-size: .67rem;
+            line-height: 1.5rem;
+            width: 5rem;
+            box-shadow: 0.5px 0.5px 5px $orange;
+            border-radius: 5px;
+            
+        }
+        .gg{
+            margin: 4px 30px;
+        }
+        .button{
+            i{
+                cursor: pointer;
+            }
+        }
+        
+        .save{
+            margin-top: 10px;
+        }
     }
 }
 
@@ -225,6 +347,28 @@ $darkgray:#E1E1E1;
             text-align: left;
             padding-left: 2rem;
         }
+
+        .td1_input{
+            font-weight: 400;
+            font-size: .67rem;
+            line-height: 1.5rem;
+            width: 5rem;
+            box-shadow: 0.5px 0.5px 5px $orange;
+            border-radius: 5px;
+            
+        }
+        .gg{
+            margin: 4px 30px;
+        }
+        .button{
+            i{
+                cursor: pointer;
+            }
+        }
+        
+        .save{
+            margin-top: 10px;
+        }
     }
 }
 
@@ -240,4 +384,10 @@ $darkgray:#E1E1E1;
     height: 28px;
     justify-content: center;
     align-items: center;
+}
+.Error {
+    color:#F3593F;
+    font-weight: 400;
+    font-size: 15px;
+  
 }

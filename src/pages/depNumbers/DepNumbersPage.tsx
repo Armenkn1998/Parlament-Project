@@ -12,7 +12,7 @@ export const DepNumbersPage = () => {
   
   useEffect(()=>{
     dispatch(fetchDepNum())
-  },[])
+  },[dispatch])
 
   return (
     <div className='timeTable'>
