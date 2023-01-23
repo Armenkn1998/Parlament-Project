@@ -1,93 +1,98 @@
-.DocCirculationBody {
-    max-width: 640px;
-    background: #FFFFFF;
-    color: #263849;
-    border: .5px solid #94A3BA;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    border-radius: 5px;
-    margin-top: 40px;
-    margin-bottom: 200px;
-    text-align: center;
-    font-family: 'GHEA Grapalat';
-    font-style: normal;
+.DocCirculation {
+    width: 45rem;
+    margin: 0 auto;
 
-    .DocCirculation_title {
-        display: flex;
-        padding: 16px;
-        text-align: left;
-        align-items: center;
-
-        img {
-            width: 35px;
-            height: 30px;
-        }
-
-        h2 {
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 24px;
-            max-width: 500px;
-            margin-left: 20px;
-        }
-    }
-
-    hr {
-        width: 97%;
-        height: 1px;
-        background-color: #94A3BA;
+    .DocCirculationBody {
+        max-width: 640px;
+        background: #FFFFFF;
+        color: #263849;
+        border: .5px solid #94A3BA;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
         margin: auto;
-    }
+        border-radius: 5px;
+        margin-top: 40px;
+        margin-bottom: 200px;
+        text-align: center;
+        font-family: 'GHEA Grapalat';
+        font-style: normal;
 
-    .DocCirculation_main {
-        h2 {
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 24px;
+        .DocCirculation_title {
+            display: flex;
+            padding: 16px;
+            text-align: left;
+            align-items: center;
+
+            img {
+                width: 35px;
+                height: 30px;
+            }
+
+            h2 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                max-width: 500px;
+                margin-left: 20px;
+            }
         }
 
-        .DocCirculation_main_page {
-            h3 {
+        hr {
+            width: 97%;
+            height: 1px;
+            background-color: #94A3BA;
+            margin: auto;
+        }
+
+        .DocCirculation_main {
+            h2 {
                 font-weight: 700;
                 font-size: 13px;
                 line-height: 24px;
             }
 
-            ul {
-                padding: 10px 10px 10px 36px;
-                text-align: left;
-                list-style: none;
-
-                li {
-                    font-weight: 400;
-                    font-size: 11px;
+            .DocCirculation_main_page {
+                h3 {
+                    font-weight: 700;
+                    font-size: 13px;
                     line-height: 24px;
-
-                    p {
-                        margin-left: 20px;
-                    }
-
-                    p::before {
-                        content: " ";
-                        width: 8px;
-                        height: 2px;
-                        background: #E1AA5A;
-                        display: inline-block;
-                        border-radius: 1px;
-                        margin-right: 10px;
-                        margin-left: -18px;
-                    }
                 }
 
-                li::before {
-                    content: " ";
-                    width: 6px;
-                    height: 6px;
-                    background: #E1AA5A;
-                    border-radius: 1px;
-                    display: inline-block;
-                    margin-right: 10px;
-                    margin-left: -16px;
+                ul {
+                    padding: 10px 10px 10px 36px;
+                    text-align: left;
+                    list-style: none;
+
+                    li {
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 24px;
+
+                        p {
+                            margin-left: 20px;
+                        }
+
+                        p::before {
+                            content: " ";
+                            width: 8px;
+                            height: 2px;
+                            background: #E1AA5A;
+                            display: inline-block;
+                            border-radius: 1px;
+                            margin-right: 10px;
+                            margin-left: -18px;
+                        }
+                    }
+
+                    li::before {
+                        content: " ";
+                        width: 6px;
+                        height: 6px;
+                        background: #E1AA5A;
+                        border-radius: 1px;
+                        display: inline-block;
+                        margin-right: 10px;
+                        margin-left: -16px;
+                    }
                 }
             }
         }

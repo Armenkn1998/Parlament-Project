@@ -51,7 +51,7 @@ const Login = () => {
             } else if (err.response?.status === 400) {
                 setErrMsg('Missing Username or Password');
             } else if (err.response?.status === 401) {
-                setErrMsg('Unauthorized');
+                setErrMsg('Սխալ մուտքանուն կամ գախնաբառ');
             } else {
                 setErrMsg('Login Failed');
             }
@@ -62,35 +62,39 @@ const Login = () => {
 
         <section className='Login_section'>
             <div className='Login_logo'>
-                <img src='./images/Logo.png' />
-                <h2>Ազգային Ժողով</h2>
+                <div className='Login_gerb'><img src='./images/gerb.png' /></div>
+                <div>
+                    <img  src='./images/Logo.png' />
+                    <h2>Ազգային Ժողով</h2>
+                </div>
+                
             </div>
-            <div className='Login_gerb'><img src='./images/gerb.png' /></div>
+            
             <div className='Login_head'>
                 <div className='Login_body'>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
                     <h1>Մուտք</h1>
                     <form onSubmit={handleSubmit}>
-                        <label htmlFor="username">Մուտքանուն:</label>
                         <input
                             type="text"
                             id="username"
                             ref={userRef}
+                            placeholder='Մուտքանուն...'
                             autoComplete="off"
                             {...userAttribs}
                             required
                         />
 
-                        <label htmlFor="password">Գաղտնաբառ:</label>
                         <input
                             type="password"
                             id="password"
+                            placeholder='Գաղտնաբառ'
                             onChange={(e) => setPwd(e.target.value)}
                             value={pwd}
                             required
                         />
-                        <button>Sign In</button>
                         <div className="persistCheck">
+                            
                             <input
                                 type="checkbox"
                                 id="persist"
@@ -98,7 +102,9 @@ const Login = () => {
                                 checked={check}
                             />
                             <label htmlFor="persist">Հիշել</label>
-                        </div>
+                            </div>
+                           <button className='button'>Մուտք </button> 
+                        
                     </form>
                 </div>
             </div>

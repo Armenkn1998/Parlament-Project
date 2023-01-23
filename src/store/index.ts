@@ -6,7 +6,8 @@ import CommitteesReducer from './slice/CommitteesSlice';
 import CommittesReducer from './slice/CommitteSlice';
 import FractionReducer from './slice/FractionSlice'
 import DocCirculationReducer from './slice/DocCirculationSlice';
-import MpsnumberReducer from './slice/MpsnumberSlice'
+import MpsnumberReducer from './slice/MpsnumberSlice';
+import CalendarReducer from './slice/CalendarSlice';
 
 export const store = configureStore({
   reducer: {
@@ -17,7 +18,8 @@ export const store = configureStore({
     Committes:CommittesReducer,
     Fraction:FractionReducer,
     DocCirculation:DocCirculationReducer,
-    Mpsnumber:MpsnumberReducer
+    Mpsnumber:MpsnumberReducer,
+    Calendar:CalendarReducer
   }
 })
 

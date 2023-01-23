@@ -34,7 +34,7 @@ const PersistLogin = () => {
                 ? <Outlet />
                 : isLoading
                     ? <p>Loading...</p>
-                    : auth.accessToken ? <div><Admin /><Outlet /></div> : <Outlet />
+                    : auth.accessToken ? <div className="adminApp" ><Admin /><Outlet /></div> : <Outlet />
             }
         </>
     )

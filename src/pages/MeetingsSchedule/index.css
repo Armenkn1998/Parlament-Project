@@ -1,5 +1,10 @@
-.demo {
-  max-width: 88.8%;
+.MeetingsSchedule {
+  width: 45rem;
+  margin: 0 auto;
+}
+
+.MeetingsSchedule .demo {
+  width: 40rem;
   margin: 20px auto;
   border: 1px solid black;
   height: 1703px;
@@ -10,18 +15,18 @@
   padding: 1rem;
 }
 
-.demo .head_box {
+.MeetingsSchedule .demo .head_box {
   display: flex;
   align-items: center;
   padding: 1.5625rem 0;
 }
 
-.demo .head_box img {
+.MeetingsSchedule .demo .head_box img {
   width: 46px;
   height: 30px;
 }
 
-.demo .head_box h2 {
+.MeetingsSchedule .demo .head_box h2 {
   font-family: 'GHEA Grapalat';
   font-style: normal;
   font-weight: 700;
@@ -31,17 +36,17 @@
   margin-left: 20px;
 }
 
-.demo .line {
+.MeetingsSchedule .demo .line {
   border: 1px solid #94A3BA;
   background: #94A3BA;
   margin-bottom: 1.25rem;
 }
 
-.demo .calendar {
+.MeetingsSchedule .demo .calendar {
   margin: 0 auto 20px;
 }
 
-.demo .calendar .year {
+.MeetingsSchedule .demo .calendar .year {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -51,14 +56,14 @@
   margin: 0 auto;
 }
 
-.demo .calendar .year .month {
-  width: 40.50%;
+.MeetingsSchedule .demo .calendar .year .month {
+  width: 16.1875rem;
   height: 218px;
   background: #F5F5F5;
   margin-bottom: 1.875rem;
 }
 
-.demo .calendar .year .month .month_box {
+.MeetingsSchedule .demo .calendar .year .month .month_box {
   display: flex;
   align-items: center;
   background: #E1AA5A;
@@ -66,7 +71,7 @@
   height: 34px;
 }
 
-.demo .calendar .year .month .monthName {
+.MeetingsSchedule .demo .calendar .year .month .monthName {
   width: 59px;
   height: 24px;
   font-size: 14px;
@@ -79,14 +84,14 @@
   text-transform: capitalize;
 }
 
-.demo .calendar .year .month .dayOfTheWeek {
+.MeetingsSchedule .demo .calendar .year .month .dayOfTheWeek {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 3px 10px;
 }
 
-.demo .calendar .year .month .dayOfTheWeek .days {
+.MeetingsSchedule .demo .calendar .year .month .dayOfTheWeek .days {
   width: 20px;
   height: 24px;
   font-style: normal;
@@ -95,20 +100,21 @@
   line-height: 24px;
   box-sizing: border-box;
   color: #263849;
-  margin-right: 0.85rem;
+  margin-right: 1rem;
 }
 
-.demo .calendar .year .month .dayOfTheWeek .days:last-child {
+.MeetingsSchedule .demo .calendar .year .month .dayOfTheWeek .days:last-child {
   margin-right: 0;
 }
 
-.demo .calendar .year .month .content {
+.MeetingsSchedule .demo .calendar .year .month .content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 2px;
 }
 
-.demo .calendar .year .month .content .day {
+.MeetingsSchedule .demo .calendar .year .month .content .day {
   height: 24px;
   font-style: normal;
   font-weight: 400;
@@ -116,12 +122,24 @@
   line-height: 24px;
   cursor: pointer;
   color: #263849;
-  width: 34.5px;
+  width: 36px;
   text-align: center;
   box-sizing: border-box;
 }
 
-.demo .calendar .year .month .content .checkday {
+.MeetingsSchedule .demo .calendar .year .month .content .dayus {
+  height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+  color: #263849;
+  width: 36px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.MeetingsSchedule .demo .calendar .year .month .content .checkday {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,13 +150,36 @@
   border-radius: 50%;
   margin-left: 6px;
   margin-right: 4.5px;
+  color: #FFFFFF;
+  font-size: 11px;
 }
 
-.demo .calendar .year .month .content .spanCheckday {
+.MeetingsSchedule .demo .calendar .year .month .content .spanCheckday {
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 24px;
   cursor: pointer;
   color: #FFFFFF;
+}
+
+.MeetingsSchedule .demo .disables {
+  margin: 0 42px;
+  display: disable;
+  background: #ece1d0;
+  font-size: 14px;
+  color: #28374A;
+  padding: 10px;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.MeetingsSchedule .demo .nodisables {
+  margin: 0 42px;
+  display: disable;
+  background: #E1AA5A;
+  font-size: 14px;
+  color: #28374A;
+  padding: 10px;
+  cursor: pointer;
 }

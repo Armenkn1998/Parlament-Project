@@ -1,12 +1,18 @@
 import React from 'react'
 import { Header } from '../../components/Header/Header';
+import useAuth from '../../hooks/AdminHooks/useAuth'
+import Calendar from '../../components/Calendar';
+import "./index.scss"
+import { useEffect } from 'react';
 
-import Calendar  from '../../components/calendar';
-import  "./index.scss"
+
 export const MeetingsSchedulePage = () => {
+  const { auth }: any = useAuth()
   
+  
+
   return (
-    <div>
+    <div className='MeetingsSchedule'>
       <Header />
 
       <div className="demo">
@@ -16,6 +22,7 @@ export const MeetingsSchedulePage = () => {
         </div>
         <div className='line'></div>
         <Calendar />
+        
       </div>
     </div>
   )

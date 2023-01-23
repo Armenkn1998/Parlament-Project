@@ -6,6 +6,8 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { MeetingsSchedulePage } from './pages/MeetingsSchedule/MeetingsSchedulePage';
 import { MPNumbersPage } from "./pages/MPnumbers/MPNumbersPage";
 import { TimeTablePage } from './pages/timeTable/TimeTablePage';
+import  Admin from "../src/pages/Admin/Admin";
+import  AdminHomepage  from "./components/Admin/components/AdminHomepage";
 import Login from './components/Admin/components/Login';
 import useAuth from "./hooks/AdminHooks/useAuth";
 import RequireAuth from './components/Admin/components/RequireAuth';
@@ -21,7 +23,7 @@ const ROLES = {
 function App() {
   const { auth }: any = useAuth();
   return (
-    <div className='App'>
+    <div className={auth.roles ? "admin" :' App'}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path='/DocCirculation' element={<DocCirculationPage />} />
@@ -31,9 +33,12 @@ function App() {
         <Route path='/MPNumbers' element={<MPNumbersPage />} />
         <Route path='/DepNumbers' element={<DepNumbersPage />} />
         <Route path="/" element={<PersistLogin />} >
-          <Route path="/admin" element={!auth?.accessToken && <Login />} />
+          <Route path="/admin" element={!auth?.accessToken ? <Login /> :< AdminHomepage /> } />
+          {/* <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
+            <Route path="/Admin" element={< AdminHomepage />} />
+          </Route> */}
           <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
-            <Route path="/admin" element={<DocCirculationPage />} />
+            <Route path="/admindocCirculation" element={<DocCirculationPage />} />
           </Route>
           <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
             <Route path="admintimeTable" element={<TimeTablePage />} />

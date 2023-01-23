@@ -58,3 +58,8 @@ export interface IDepnumbers {
     title: string;
     tel: string;
 }
+export interface ICalendar {
+    id:number;
+    day: string;
+    
+}
