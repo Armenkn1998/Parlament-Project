@@ -207,7 +207,10 @@ export const CommittePage = () => {
             }
           </tbody>
         </table>
-        {auth.roles && <i onClick={() => { setAdd(!add) }} className="fa-solid fa-plus"></i>}
+        {auth.roles && <i onClick={() => { setAdd(!add); setAddvalue({
+           name: '',  member1: '',    member2: '',    cityphone: '',  
+           internalphone: '',    internalphone2: '',  }) 
+           }} className="fa-solid fa-plus"></i>}
       </form>}
     </>
   )
