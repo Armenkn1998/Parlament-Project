@@ -102,24 +102,21 @@ export const TimeTablePage = () => {
 
         {add ? <form className='form'>
 
-         
             <label>Ստորաբաժանման անվանումը</label>
-            <textarea className='td1' value={value} onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => { setValue(e.target.value) }} style={{ resize: "none" }}></textarea>
-          
-         
+            <textarea className='td1' value={value} onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => { setValue(e.target.value) }}></textarea>
+
             <label>Օրը</label>
-            <textarea  className='td1' value={value1} onChange={(e: any) => { setValue1(e.target.value) }} style={{ resize: "none" }}></textarea>
-          
+            <textarea  className='td1' value={value1} onChange={(e: any) => { setValue1(e.target.value) }}></textarea>
           
             <label>Ժամը</label>
-            <textarea  className='td1' value={value2} onChange={(e: any) => { setValue2(e.target.value) }} style={{ resize: "none" }}></textarea>
+            <textarea  className='td1' value={value2} onChange={(e: any) => { setValue2(e.target.value) }}></textarea>
           
+          <div className='form_div'>
+            <button onClick={() => adminsSave(value, value1, value2)} >Ավելացնել</button>
+            <button onClick={()=> setAdd(!add)} >Չեղարկել</button>
+          </div>
 
-          <button onClick={() => adminsSave(value, value1, value2)} >Ավելացնել</button>
-          <button onClick={()=> setAdd(!add)} >Cancel</button>
-
-
-        </form> : add1 ? <form className='form'>
+        </form> : add1 ? <form>
           <label>Ստորաբաժանման անվանումը</label>
           <textarea value={valueCitizen} onChange={(e: any) => { setValueCitizen(e.target.value) }} style={{ resize: "none" }}></textarea>
 
@@ -129,9 +126,11 @@ export const TimeTablePage = () => {
           <label>Ժամը</label>
           <textarea value={valueCitizen2} onChange={(e: any) => { setValueCitizen2(e.target.value) }} style={{ resize: "none" }}></textarea>
 
-          <button onClick={() => adminsSave1(valueCitizen, valueCitizen1, valueCitizen2)}>Save</button>
-          <button onClick={()=> setAdd(!add)} >Cancel</button>
-          
+          <div className='form_div'>
+            <button onClick={() => adminsSave1(valueCitizen, valueCitizen1, valueCitizen2)} >Ավելացնել</button>
+            <button onClick={()=> setAdd(!add)} >Չեղարկել</button>
+          </div>
+
         </form> :
         <div>
           <div>
@@ -158,22 +157,23 @@ export const TimeTablePage = () => {
                     </td>
                     <td>
                       <button className='save'> <i onClick={() => adminSave(item.id, value, value1, value2, 'admission')} className="fa-regular fa-square-check"></i></button>
+                      <button onClick={() => setEdit(-1)} ><i className="fa-solid fa-xmark"></i></button>
                     </td>
                   </tr> : <tr>
                     <td>{item.name}</td>
                     <td>{item.day}</td>
                     <td>{item.time}</td>
-                    <td>{auth.roles && <button onClick={() => {
+                    {auth.roles &&<td> <button onClick={() => {
                       setEdit(index);
                       setValue(item.name);
                       setValue1(item.day);
                       setValue2(item.time)
-                    }}><i className="fa-solid fa-pen"></i></button>}
+                    }}><i className="fa-solid fa-pen"></i></button>
 
                       {auth.roles && <button onClick={() => {
                         adminDelete(item.id, "admission")
                       }}><i className="fa-regular fa-trash-can"></i></button>}
-                    </td>
+                    </td>}
                   </tr>}
                 </tbody>
                 )}
@@ -210,6 +210,7 @@ export const TimeTablePage = () => {
                   </td>
                   <td>
                     <button className='save'> <i onClick={() => adminSave1(item.id, valueCitizen, valueCitizen1, valueCitizen2, 'citizenAdmission')} className="fa-regular fa-square-check"></i></button>
+                    <button onClick={() => seteditCitizen(-1)} ><i className="fa-solid fa-xmark"></i></button>
                   </td>
                 </tr> 
                   :
@@ -217,17 +218,17 @@ export const TimeTablePage = () => {
                     <td>{item.name}</td>
                     <td>{item.day}</td>
                     <td>{item.time}</td>
-                    <td>{auth.roles && <button onClick={() => {
+                    {auth.roles && <td><button onClick={() => {
                       seteditCitizen(index);
                       setValueCitizen(item.name);
                       setValueCitizen1(item.day);
                       setValueCitizen2(item.time)
-                    }}><i className="fa-solid fa-pen"></i></button>}
+                    }}><i className="fa-solid fa-pen"></i></button>
 
                       {auth.roles && <button onClick={() => {
                         adminDelete(item.id, "citizenAdmission")
                       }}><i className="fa-regular fa-trash-can"></i></button>}
-                    </td>
+                    </td>}
                   </tr>}
 
 

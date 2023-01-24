@@ -6,11 +6,13 @@ export const fetchDocCirculation = ()=>{
     return async (dispatch:Dispatch)=>{
         try{
             dispatch(fetching_1());
-            const response =await axios.get('DocCirculation');
+            const response =await axios.get('DocCirculation_1');
+            const response1 =await axios.get('DocCirculation_2');
+            const response2 =await axios.get('DocCirculation_3');
             
-            dispatch(fetchSuccess_1(response.data[0].DocCirculation_1));
-            dispatch(fetchSuccess_11(response.data[0].DocCirculation_2));
-            dispatch(fetchSuccess_12(response.data[0].DocCirculation_3));
+            dispatch(fetchSuccess_1(response.data));
+            dispatch(fetchSuccess_11(response1.data));
+            dispatch(fetchSuccess_12(response2.data));
         }
         catch(error){
             dispatch(fetchError_1(error as Error));
